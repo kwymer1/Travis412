@@ -13,7 +13,7 @@ public class SimpleCalculatorTest {
 	}
 	
 	@Test
-	public void testDivide() {
+	public void testDivide() { 
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.divide(8,2), 4); 
 	}
