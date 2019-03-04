@@ -41,6 +41,12 @@ public class SimpleCalculatorTest {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.minus(-4, 2), -6);
 	}
+	
+	@Test
+	public void testDoubleNegativeSubtract() {
+		SimpleCalculator calc = new SimpleCalculator();
+		assertEquals(calc.minus(4, -6), 10);
+	}
 
 	@Test(expected=java.lang.ArithmeticException.class)
 	public void testDivideByZero() {
